@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> 2026 Lacheee – Belajar Alat Lab Kimia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;900&family=Baloo+2:wght@600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ════════ CHEMISTRY BACKGROUND ════════ -->
+  <div class="chem-bg" aria-hidden="true">
+    <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+      <defs>
+        <pattern id="chemPattern" x="0" y="0" width="320" height="320" patternUnits="userSpaceOnUse">
+          <text x="10" y="30" font-size="22" font-family="monospace" fill="rgba(0,180,162,0.18)" font-weight="bold">H&#x2082;O</text>
+          <polygon points="100,20 116,30 116,50 100,60 84,50 84,30" fill="none" stroke="rgba(168,230,61,0.13)" stroke-width="1.5"/>
+          <line x1="100" y1="20" x2="100" y2="10" stroke="rgba(168,230,61,0.13)" stroke-width="1.5"/>
+          <line x1="116" y1="30" x2="126" y2="24" stroke="rgba(168,230,61,0.13)" stroke-width="1.5"/>
+          <line x1="116" y1="50" x2="126" y2="56" stroke="rgba(168,230,61,0.13)" stroke-width="1.5"/>
+          <line x1="100" y1="60" x2="100" y2="70" stroke="rgba(168,230,61,0.13)" stroke-width="1.5"/>
+          <line x1="84" y1="50" x2="74" y2="56" stroke="rgba(168,230,61,0.13)" stroke-width="1.5"/>
+          <line x1="84" y1="30" x2="74" y2="24" stroke="rgba(168,230,61,0.13)" stroke-width="1.5"/>
+          <text x="170" y="45" font-size="18" font-family="monospace" fill="rgba(142,92,247,0.18)" font-weight="bold">CO&#x2082;</text>
+          <text x="240" y="25" font-size="18" font-family="monospace" fill="rgba(0,180,162,0.15)">NaCl</text>
+          <rect x="270" y="40" width="40" height="40" rx="5" fill="none" stroke="rgba(255,217,74,0.14)" stroke-width="1.5"/>
+          <text x="281" y="58" font-size="14" font-family="monospace" fill="rgba(255,217,74,0.2)" font-weight="bold">Fe</text>
+          <text x="280" y="72" font-size="9" font-family="monospace" fill="rgba(255,217,74,0.14)">26</text>
+          <text x="20" y="120" font-size="17" font-family="monospace" fill="rgba(255,107,107,0.17)">H&#x2082;SO&#x2084;</text>
+          <rect x="90" y="100" width="40" height="40" rx="5" fill="none" stroke="rgba(0,180,162,0.14)" stroke-width="1.5"/>
+          <text x="103" y="118" font-size="14" font-family="monospace" fill="rgba(0,180,162,0.22)" font-weight="bold">O</text>
+          <text x="100" y="132" font-size="9" font-family="monospace" fill="rgba(0,180,162,0.14)">8</text>
+          <text x="155" y="115" font-size="20" font-family="monospace" fill="rgba(168,230,61,0.17)" font-weight="bold">CH&#x2084;</text>
+          <line x1="230" y1="105" x2="260" y2="105" stroke="rgba(255,217,74,0.16)" stroke-width="2"/>
+          <line x1="230" y1="112" x2="260" y2="112" stroke="rgba(255,217,74,0.16)" stroke-width="2"/>
+          <text x="265" y="115" font-size="13" font-family="monospace" fill="rgba(255,217,74,0.18)">C</text>
+          <text x="10" y="195" font-size="18" font-family="monospace" fill="rgba(142,92,247,0.18)">NaOH</text>
+          <rect x="80" y="175" width="40" height="40" rx="5" fill="none" stroke="rgba(168,230,61,0.13)" stroke-width="1.5"/>
+          <text x="90" y="193" font-size="12" font-family="monospace" fill="rgba(168,230,61,0.22)" font-weight="bold">Na</text>
+          <text x="90" y="207" font-size="9" font-family="monospace" fill="rgba(168,230,61,0.14)">11</text>
+          <text x="150" y="190" font-size="20" font-family="monospace" fill="rgba(0,180,162,0.18)" font-weight="bold">HCl</text>
+          <circle cx="250" cy="185" r="14" fill="none" stroke="rgba(255,107,107,0.15)" stroke-width="1.5"/>
+          <circle cx="250" cy="185" r="6" fill="rgba(255,107,107,0.12)"/>
+          <circle cx="250" cy="165" r="4" fill="none" stroke="rgba(255,107,107,0.15)" stroke-width="1"/>
+          <circle cx="264" cy="193" r="4" fill="none" stroke="rgba(255,107,107,0.15)" stroke-width="1"/>
+          <circle cx="236" cy="193" r="4" fill="none" stroke="rgba(255,107,107,0.15)" stroke-width="1"/>
+          <rect x="285" y="175" width="30" height="30" rx="4" fill="none" stroke="rgba(255,217,74,0.13)" stroke-width="1.5"/>
+          <text x="294" y="195" font-size="13" font-family="monospace" fill="rgba(255,217,74,0.2)" font-weight="bold">K</text>
+          <text x="10" y="265" font-size="13" font-family="monospace" fill="rgba(168,230,61,0.17)">C&#x2086;H&#x2081;&#x2082;O&#x2086;</text>
+          <rect x="110" y="248" width="36" height="36" rx="5" fill="none" stroke="rgba(142,92,247,0.14)" stroke-width="1.5"/>
+          <text x="119" y="265" font-size="12" font-family="monospace" fill="rgba(142,92,247,0.22)" font-weight="bold">Cl</text>
+          <text x="119" y="278" font-size="9" font-family="monospace" fill="rgba(142,92,247,0.14)">17</text>
+          <text x="165" y="268" font-size="20" font-family="monospace" fill="rgba(255,217,74,0.17)" font-weight="bold">pH</text>
+          <text x="220" y="265" font-size="18" font-family="monospace" fill="rgba(0,180,162,0.18)">NH&#x2083;</text>
+          <polygon points="285,250 298,257 298,272 285,279 272,272 272,257" fill="none" stroke="rgba(168,230,61,0.14)" stroke-width="1.5"/>
+          <text x="279" y="269" font-size="9" font-family="monospace" fill="rgba(168,230,61,0.18)">C&#x2086;</text>
+        </pattern>
+      </defs>
+      <rect width="100%" height="100%" fill="url(#chemPattern)"/>
+    </svg>
+  </div>
+
+  <!-- ════════ NAVBAR ════════ -->
+  <nav>
+    <div class="logo" onclick="goHome()">
+      La<span>cheee</span>
+      <div class="logo-tagline">Laboratory Chemistry Equipment Explorer</div>
+    </div>
+<div class="nav-links">
+  <button class="nav-btn active-nav" data-page="home" onclick="showPage('home', this)">🏠 Home</button>
+  <button class="nav-btn" data-page="profil" onclick="showPage('profil', this)">👤 Profil</button>
+  <button class="nav-btn" data-page="petunjuk" onclick="showPage('petunjuk', this)">📖 Petunjuk Penggunaan</button>
+  <button class="nav-btn" data-page="panduan" onclick="showPage('panduan', this)">🎮 Panduan Permainan</button>
+</div>
+</nav>
+
+  <!-- ════════ HOME PAGE ════════ -->
+  <div id="home" class="page active">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="hero">
+      <div class="hero-badge"> Media Pembelajaran Interaktif</div>
+      <h1>Kenali <em>Alat Lab</em><br/>Kimia dengan Seru!</h1>
+      <p>Belajar alat laboratorium kimia menjadi lebih mudah dan menyenangkan dengan galeri interaktif dan permainan edukatif.</p>
+<div class="hero-btns">
+  <button class="btn-success"  onclick="showPage('tujuan', null)">🎯 Tujuan Pembelajaran</button>
+  <button class="btn-secondary" onclick="showPage('materi', null)">🔬 Materi</button>
+  <button class="btn-secondary" onclick="openVirtualLab()">🧫 Virtual Lab</button>
+  <button class="btn-success"  onclick="showPage('permainan', null)">🎮 Permainan</button>
+</div>
+  </div>
+    <footer> 2026 Lacheee – Media Belajar Alat Lab Kimia</footer>
+  </div>
+
+  <!-- ════════ MATERI PAGE ════════ -->
+  <div id="materi" class="page">
+    <div class="materi-header">
+      <div class="section-title">🔬 Galeri Alat Laboratorium</div>
+      <p class="section-sub">Klik kartu alat untuk melihat deskripsi, fungsi, model media, dan simulasi cara penggunaannya.</p>
+    </div>
+    <div class="categories">
+      <button class="cat-btn active" onclick="filterAlat('semua', this)">Semua</button>
+      <button class="cat-btn" onclick="filterAlat('gelas', this)">🧪 Alat Gelas</button>
+      <button class="cat-btn" onclick="filterAlat('ukur', this)">📏 Alat Ukur</button>
+      <button class="cat-btn" onclick="filterAlat('pemanas', this)">🔥 Alat Pemanas</button>
+      <button class="cat-btn" onclick="filterAlat('penunjang', this)">🗜️ Alat Penunjang</button>
+      <button class="cat-btn" onclick="filterAlat('keselamatan', this)">🛡️ Keselamatan</button>
+    </div>
+    <div class="alat-grid" id="alatGrid"></div>
+    <footer> 2026 Lacheee – Media Belajar Alat Lab Kimia</footer>
+  </div>
+
+  <!-- ════════ VIRTUAL LAB PAGE ════════ -->
+  <div id="virtualLab" class="page">
+    <div class="vlab-header">
+      <div>
+        <div class="section-title">🧫 Virtual Lab</div>
+        <p class="section-sub">Putar alat 3D, lakukan prosedur, dan amati perubahan bahan secara langsung di dalam alat.</p>
+      </div>
+      <div class="vlab-count" id="vlabCount" aria-live="polite">33 alat tersedia</div>
+    </div>
+
+    <div class="vlab-layout">
+      <aside class="vlab-sidebar" aria-label="Daftar alat Virtual Lab">
+        <label class="vlab-search" for="vlabSearch">
+          <span aria-hidden="true">⌕</span>
+          <input
+            id="vlabSearch"
+            type="search"
+            placeholder="Cari nama alat..."
+            autocomplete="off"
+            oninput="renderVirtualLabList()"
+          />
+        </label>
+
+        <label class="vlab-filter-label" for="vlabFilter">Kategori alat</label>
+        <select id="vlabFilter" class="vlab-filter" onchange="renderVirtualLabList()">
+          <option value="semua">Semua kategori</option>
+          <option value="gelas">Alat Gelas</option>
+          <option value="ukur">Alat Ukur</option>
+          <option value="pemanas">Alat Pemanas</option>
+          <option value="penunjang">Alat Penunjang</option>
+          <option value="keselamatan">Keselamatan</option>
+        </select>
+
+        <div class="vlab-tool-list" id="virtualAlatList" role="listbox" aria-label="Pilih alat laboratorium"></div>
+      </aside>
+
+      <main class="vlab-workspace" id="virtualWorkspace" aria-live="polite">
+        <div class="vlab-empty">
+          <div class="vlab-empty-icon">🧪</div>
+          <h2>Pilih alat untuk memulai</h2>
+          <p>Setiap alat menampilkan prosedur, perubahan bahan, dan hasil pengamatan dari kondisi awal hingga kondisi akhir.</p>
+        </div>
+      </main>
+    </div>
+
+    <footer> 2026 Lacheee – Virtual Lab Alat Kimia</footer>
+  </div>
+
+  <!-- ════════ PERMAINAN PAGE ════════ -->
+  <div id="permainan" class="page">
+    <div class="game-header">
+      <div class="section-title">🎮 Permainan Edukatif</div>
+      <p class="section-sub">Pilih mode permainan yang kamu inginkan!</p>
+    </div>
+<div class="game-modes">
+  <div class="game-mode-card" onclick="selectGame('paket1', this)">
+    <div class="game-mode-icon">🎮</div>
+    <div class="game-mode-title">Paket 1</div>
+    <div class="game-mode-desc">Noughts & Crosses · Crosswords · Match Up · Memory · Multiple Choice</div>
+    <div class="game-mode-badge badge-satu">5 Permainan</div>
+  </div>
+  <div class="game-mode-card" onclick="selectGame('paket2', this)">
+    <div class="game-mode-icon">🕹️</div>
+    <div class="game-mode-title">Paket 2</div>
+    <div class="game-mode-desc">Word Search · Spell It · Anagrams</div>
+    <div class="game-mode-badge badge-dua">3 Permainan</div>
+  </div>
+</div>
+
+    <div class="game-frame-wrap" id="gameFrameWrap">
+      <div class="game-placeholder" id="gamePlaceholder">
+        <div class="big-icon">🎯</div>
+        <p>Pilih mode permainan di atas untuk mulai bermain!</p>
+      </div>
+    </div>
+    <footer style="padding-top:32px"> 2026 Lacheee – Media Belajar Alat Lab Kimia</footer>
+  </div>
+
+<!-- ════════ PROFIL PAGE ════════ -->
+<div id="profil" class="page">
+  <div class="profil-container">
+
+    <!-- Pengembang 1 -->
+    <div class="profil-card">
+      <div class="avatar">
+        <img src="./foto/rifki-subagya.png" alt="Foto Profil 1">
+      </div>
+      <div class="profil-name">Rifki Subagya</div>
+      <div class="profil-role">Pengembang Website Lacheee</div>
+      <hr class="profil-divider"/>
+      <div class="info-row"><span class="info-label">Mahasiswa Pendidikan Kimia</span></div>
+    </div>
+
+    <!-- Pengembang 2 -->
+    <div class="profil-card">
+      <div class="avatar">
+        <img src="./foto/bapak-ferli.jpeg" alt="Foto Profil 2">
+      </div>
+      <div class="profil-name">Dr. Ferli Septi Irwansyah, M.Si.</div>
+      <div class="profil-role">Dosen Pembimbing 1</div>
+      <hr class="profil-divider"/>
+      <div class="info-row"><span class="info-label">Dosen Pendidikan Kimia</span></div>
+    </div>
+
+    <!-- Pengembang 3 -->
+    <div class="profil-card">
+      <div class="avatar">
+        <img src="./foto/bapak-saepudin.jpeg" alt="Foto Profil 3">
+      </div>
+      <div class="profil-name">Saepudin Rahmatullah, M.Si.</div>
+      <div class="profil-role">Dosen Pembimbing 2</div>
+      <hr class="profil-divider"/>
+      <div class="info-row"><span class="info-label">Dosen Pendidikan Kimia</span></div>
+    </div>
+
+  </div>
+
+  <!-- Deskripsi website -->
+  <div class="profil-desc">
+    Website <strong>Lacheee</strong> dibuat sebagai media pembelajaran interaktif untuk mengenal alat-alat laboratorium kimia beserta fungsinya. Dipadukan dengan permainan edukatif agar belajar jadi lebih menyenangkan! 🧪✨
+  </div>
+</div>
+
+<!-- ════════ TUJUAN PEMBELAJARAN ════════ -->
+<div id="tujuan" class="page">
+  <div class="materi-header">
+    <div class="section-title">🎯 Tujuan Pembelajaran</div>
+    <p class="section-sub">Capaian yang diharapkan setelah mempelajari media ini</p>
+  </div>
+  <div class="guide-grid">
+    <div class="guide-card">
+      <h3>📌 Setelah belajar, kamu mampu:</h3>
+      <div class="guide-step"><div class="guide-num">1</div><div>Mengenal dan menyebutkan <strong>nama serta bentuk</strong> alat-alat laboratorium kimia.</div></div>
+      <div class="guide-step"><div class="guide-num">2</div><div>Menjelaskan <strong>fungsi utama</strong> dari setiap alat laboratorium.</div></div>
+      <div class="guide-step"><div class="guide-num">3</div><div>Mengelompokkan alat berdasarkan kategori: <strong>alat gelas, alat ukur, alat pemanas, alat penunjang,</strong> dan <strong>alat keselamatan</strong>.</div></div>
+      <div class="guide-step"><div class="guide-num">4</div><div>Mengenali <strong>simbol keselamatan (GHS)</strong> beserta bahaya dan cara penanganannya.</div></div>
+      <div class="guide-step"><div class="guide-num">5</div><div>Menumbuhkan kesadaran menggunakan alat secara <strong>benar dan aman</strong> di laboratorium.</div></div>
+    </div>
+  </div>
+  <footer> 2026 Lacheee – Media Belajar Alat Lab Kimia</footer>
+</div>
+
+<!-- ════════ PETUNJUK PENGGUNAAN WEBSITE ════════ -->
+<div id="petunjuk" class="page">
+  <div class="materi-header">
+    <div class="section-title">📖 Petunjuk Penggunaan Website</div>
+    <p class="section-sub">Ikuti langkah berikut untuk memaksimalkan belajarmu</p>
+  </div>
+  <div class="guide-grid">
+    <div class="guide-card">
+      <h3>🧭 Navigasi</h3>
+      <div class="guide-step"><div class="guide-num">1</div><div>Gunakan menu di bagian atas: <strong>Home, Profil, Petunjuk Penggunaan,</strong> dan <strong>Panduan Permainan</strong>.</div></div>
+      <div class="guide-step"><div class="guide-num">2</div><div>Di halaman <strong>Home</strong> tersedia tombol cepat menuju <strong>Tujuan Pembelajaran, Materi, Virtual Lab,</strong> dan <strong>Permainan</strong>.</div></div>
+    </div>
+    <div class="guide-card">
+      <h3>🔬 Mempelajari Materi</h3>
+      <div class="guide-step"><div class="guide-num">1</div><div>Buka <strong>Materi</strong> lewat tombol di Home.</div></div>
+      <div class="guide-step"><div class="guide-num">2</div><div>Pilih kategori alat atau pilih <strong>"Semua"</strong>.</div></div>
+      <div class="guide-step"><div class="guide-num">3</div><div>Klik kartu alat untuk melihat <strong>deskripsi, fungsi,</strong> serta <strong>model 3D / video</strong>.</div></div>
+      <div class="guide-step"><div class="guide-num">4</div><div>Pada kartu <strong>Simbol Keselamatan</strong>, klik tiap piktogram GHS untuk detail bahaya & APD.</div></div>
+    </div>
+    <div class="guide-card">
+      <h3>🧫 Menggunakan Virtual Lab</h3>
+      <div class="guide-step"><div class="guide-num">1</div><div>Buka <strong>Virtual Lab</strong> melalui tombol di Home atau tombol pada detail alat.</div></div>
+      <div class="guide-step"><div class="guide-num">2</div><div>Cari dan pilih alat, lalu baca tujuan, persiapan, langkah kerja, dan informasi keselamatannya.</div></div>
+      <div class="guide-step"><div class="guide-num">3</div><div>Mainkan simulasi: tempatkan bahan atau alat, atur kontrol, dan amati perubahan sebelum–proses–sesudah.</div></div>
+      <div class="guide-step"><div class="guide-num">4</div><div>Putar tampilan 3D dengan menyeret area simulasi dan gunakan <strong>Mulai ulang</strong> untuk mengulang percobaan.</div></div>
+    </div>
+    <div class="guide-card">
+      <h3>🎮 Bermain Game</h3>
+      <div class="guide-step"><div class="guide-num">1</div><div>Buka <strong>Permainan</strong> lewat tombol di Home.</div></div>
+      <div class="guide-step"><div class="guide-num">2</div><div>Pilih <strong>Paket 1</strong> atau <strong>Paket 2</strong>; permainan langsung tampil.</div></div>
+      <div class="guide-step"><div class="guide-num">3</div><div>Lihat <strong>Panduan Permainan</strong> untuk memahami aturan tiap game.</div></div>
+    </div>
+  </div>
+  <footer> 2026 Lacheee – Media Belajar Alat Lab Kimia</footer>
+</div>
+
+<!-- ════════ PANDUAN PERMAINAN ════════ -->
+<div id="panduan" class="page">
+  <div class="materi-header">
+    <div class="section-title">🎮 Panduan Permainan</div>
+    <p class="section-sub">Deskripsi lengkap setiap jenis permainan edukatif</p>
+  </div>
+  <div class="guide-grid">
+    <div class="guide-card">
+      <h3><span class="game-mode-badge badge-satu">Paket 1</span>&nbsp;5 Permainan</h3>
+      <p style="margin-bottom:16px;color:rgba(255,255,255,.7)">Menguji ingatan dan pemahamanmu tentang alat lab.</p>
+      <div class="guide-step"><div class="guide-num">⭕</div><div><strong>Noughts &amp; Crosses</strong> — ala tic-tac-toe; jawab pertanyaan dengan benar untuk menempatkan tanda X/O.</div></div>
+      <div class="guide-step"><div class="guide-num">🔡</div><div><strong>Crosswords</strong> — teka-teki silang; isi kotak berdasarkan petunjuk nama/fungsi alat.</div></div>
+      <div class="guide-step"><div class="guide-num">🔗</div><div><strong>Match Up</strong> — pasangkan nama alat dengan fungsi atau gambarnya.</div></div>
+      <div class="guide-step"><div class="guide-num">🧠</div><div><strong>Memory</strong> — buka kartu dan temukan pasangan yang cocok.</div></div>
+      <div class="guide-step"><div class="guide-num">✅</div><div><strong>Multiple Choice</strong> — pilih jawaban benar dari beberapa opsi.</div></div>
+    </div>
+    <div class="guide-card">
+      <h3><span class="game-mode-badge badge-dua">Paket 2</span>&nbsp;3 Permainan</h3>
+      <p style="margin-bottom:16px;color:rgba(255,255,255,.7)">Mengasah ejaan dan pengenalan istilah alat lab.</p>
+      <div class="guide-step"><div class="guide-num">🔍</div><div><strong>Word Search</strong> — cari kata nama alat yang tersembunyi di dalam kotak huruf.</div></div>
+      <div class="guide-step"><div class="guide-num">✍️</div><div><strong>Spell It</strong> — eja nama alat dengan benar sesuai petunjuk.</div></div>
+      <div class="guide-step"><div class="guide-num">🔀</div><div><strong>Anagrams</strong> — susun ulang huruf acak menjadi nama alat yang tepat.</div></div>
+    </div>
+  </div>
+  <div class="profil-desc" style="margin:24px 40px 0">
+    💡 <strong>Tips:</strong> Pelajari halaman <strong>Materi</strong> dulu sebelum bermain agar skormu lebih tinggi!
+  </div>
+  <!-- ════════ CARA BERMAIN ════════ -->
+<div class="materi-header" style="padding-top:36px">
+  <div class="section-title">🕹️ Cara Bermain</div>
+  <p class="section-sub">Langkah-langkah memainkan setiap jenis permainan</p>
+</div>
+<div class="guide-grid">
+
+  <div class="guide-card">
+    <h3>⭕ Noughts &amp; Crosses</h3>
+    <div class="guide-step"><div class="guide-num">1</div><div>Permainan dimainkan oleh <strong>2 pemain</strong> bergantian (X dan O).</div></div>
+    <div class="guide-step"><div class="guide-num">2</div><div>Pilih satu kotak, lalu <strong>jawab pertanyaan</strong> tentang alat lab yang muncul.</div></div>
+    <div class="guide-step"><div class="guide-num">3</div><div>Jawaban benar → tandamu (X/O) menempati kotak itu.</div></div>
+    <div class="guide-step"><div class="guide-num">4</div><div>Menang jika berhasil membuat <strong>3 tanda sejajar</strong> (horizontal, vertikal, atau diagonal).</div></div>
+  </div>
+
+  <div class="guide-card">
+    <h3>🔡 Crosswords</h3>
+    <div class="guide-step"><div class="guide-num">1</div><div>Baca <strong>petunjuk</strong> (nama atau fungsi alat) di samping kotak.</div></div>
+    <div class="guide-step"><div class="guide-num">2</div><div>Klik nomor pada kotak, lalu ketik jawaban menggunakan keyboard.</div></div>
+    <div class="guide-step"><div class="guide-num">3</div><div>Isi semua kotak mendatar dan menurun hingga teka-teki penuh.</div></div>
+    <div class="guide-step"><div class="guide-num">4</div><div>Selesai saat <strong>semua kata benar</strong> terisi.</div></div>
+  </div>
+
+  <div class="guide-card">
+    <h3>🔗 Match Up</h3>
+    <div class="guide-step"><div class="guide-num">1</div><div>Akan muncul daftar <strong>nama alat</strong> dan <strong>fungsi/gambarnya</strong> secara acak.</div></div>
+    <div class="guide-step"><div class="guide-num">2</div><div>Seret (drag) tiap nama ke pasangan yang tepat.</div></div>
+    <div class="guide-step"><div class="guide-num">3</div><div>Pasangan benar akan terkunci; salah akan kembali.</div></div>
+    <div class="guide-step"><div class="guide-num">4</div><div>Selesai saat <strong>semua pasangan cocok</strong>.</div></div>
+  </div>
+
+  <div class="guide-card">
+    <h3>🧠 Memory</h3>
+    <div class="guide-step"><div class="guide-num">1</div><div>Semua kartu tertutup menghadap ke bawah.</div></div>
+    <div class="guide-step"><div class="guide-num">2</div><div>Buka <strong>2 kartu</strong> setiap giliran untuk mencari pasangan.</div></div>
+    <div class="guide-step"><div class="guide-num">3</div><div>Jika cocok, kartu tetap terbuka; jika tidak, tertutup lagi.</div></div>
+    <div class="guide-step"><div class="guide-num">4</div><div>Ingat posisi kartu dan temukan <strong>semua pasangan</strong> secepatnya.</div></div>
+  </div>
+
+  <div class="guide-card">
+    <h3>✅ Multiple Choice</h3>
+    <div class="guide-step"><div class="guide-num">1</div><div>Baca pertanyaan tentang nama atau fungsi alat lab.</div></div>
+    <div class="guide-step"><div class="guide-num">2</div><div>Pilih <strong>satu jawaban</strong> dari beberapa opsi yang tersedia.</div></div>
+    <div class="guide-step"><div class="guide-num">3</div><div>Jawaban benar menambah skor; lanjut ke soal berikutnya.</div></div>
+    <div class="guide-step"><div class="guide-num">4</div><div>Selesaikan semua soal untuk melihat <strong>skor akhir</strong>.</div></div>
+  </div>
+
+  <div class="guide-card">
+    <h3>🔍 Word Search</h3>
+    <div class="guide-step"><div class="guide-num">1</div><div>Perhatikan <strong>daftar kata</strong> nama alat yang harus dicari.</div></div>
+    <div class="guide-step"><div class="guide-num">2</div><div>Temukan kata yang tersembunyi di dalam kotak huruf.</div></div>
+    <div class="guide-step"><div class="guide-num">3</div><div>Klik &amp; seret dari huruf awal ke huruf akhir kata (bisa mendatar, menurun, atau diagonal).</div></div>
+    <div class="guide-step"><div class="guide-num">4</div><div>Selesai saat <strong>semua kata ditemukan</strong>.</div></div>
+  </div>
+
+  <div class="guide-card">
+    <h3>✍️ Spell It</h3>
+    <div class="guide-step"><div class="guide-num">1</div><div>Perhatikan <strong>petunjuk/gambar</strong> alat yang ditampilkan.</div></div>
+    <div class="guide-step"><div class="guide-num">2</div><div>Ketik atau susun huruf untuk <strong>mengeja</strong> nama alat dengan benar.</div></div>
+    <div class="guide-step"><div class="guide-num">3</div><div>Pastikan ejaan tepat sebelum lanjut ke kata berikutnya.</div></div>
+    <div class="guide-step"><div class="guide-num">4</div><div>Eja semua kata hingga selesai.</div></div>
+  </div>
+
+  <div class="guide-card">
+    <h3>🔀 Anagrams</h3>
+    <div class="guide-step"><div class="guide-num">1</div><div>Akan muncul <strong>huruf-huruf acak</strong> dari sebuah nama alat.</div></div>
+    <div class="guide-step"><div class="guide-num">2</div><div>Susun ulang huruf menjadi <strong>nama alat yang benar</strong>.</div></div>
+    <div class="guide-step"><div class="guide-num">3</div><div>Gunakan petunjuk bila tersedia untuk membantu menebak.</div></div>
+    <div class="guide-step"><div class="guide-num">4</div><div>Lanjut hingga semua anagram terpecahkan.</div></div>
+  </div>
+</div>
+  <footer> 2026 Lacheee – Media Belajar Alat Lab Kimia</footer>
+</div>
+
+  <!-- ════════ MODAL DETAIL ════════ -->
+  <div class="modal-overlay" id="modalOverlay" onclick="closeModal(event)">
+    <div class="modal" id="modalBox">
+      <button class="modal-close" onclick="closeModalBtn()">✕</button>
+      <div class="modal-icon" id="mIcon"></div>
+      <div class="modal-name" id="mName"></div>
+      <div class="modal-cat"  id="mCat"></div>
+      <div class="modal-desc" id="mDesc"></div>
+      <div class="modal-fungsi">
+        <h4>⚗️ Fungsi Utama</h4>
+        <ul id="mFungsi"></ul>
+      </div>
+      <button class="modal-virtual-btn" id="mVirtualBtn" type="button">🧫 Pelajari Cara Penggunaan</button>
+    </div>
+  </div>
+
+  <!-- ════════ MODAL GHS DETAIL ════════ -->
+  <div class="modal-overlay" id="ghsModalOverlay" onclick="closeGHSModal(event)">
+    <div class="modal ghs-modal" id="ghsModalBox">
+      <button class="modal-close" onclick="closeGHSModal()">✕</button>
+
+      <div class="ghs-modal-header">
+        <div class="ghs-modal-img" id="ghsModalImg"></div>
+        <div class="ghs-modal-title-wrap">
+          <div class="ghs-modal-kode" id="ghsModalKode"></div>
+          <div class="ghs-modal-nama" id="ghsModalNama"></div>
+          <div class="ghs-modal-contoh">
+            <span class="ghs-contoh-label">Contoh bahan:</span>
+            <span id="ghsModalContoh"></span>
+          </div>
+        </div>
+      </div>
+
+      <p class="ghs-modal-desc" id="ghsModalDesc"></p>
+
+      <div class="ghs-modal-section">
+        <div class="ghs-modal-section-title">⚠️ Bahaya</div>
+        <ul class="ghs-modal-list" id="ghsModalBahaya"></ul>
+      </div>
+
+      <div class="ghs-modal-section">
+        <div class="ghs-modal-section-title">🛠️ Cara Penanganan</div>
+        <ul class="ghs-modal-list" id="ghsModalPenanganan"></ul>
+      </div>
+
+      <div class="ghs-modal-section">
+        <div class="ghs-modal-section-title">🧤 Alat Pelindung Diri (APD)</div>
+        <div class="apd-chips" id="ghsModalAPD"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ════════ IMAGE LIGHTBOX ════════ -->
+  <div class="img-lightbox-overlay" id="imgLightbox">
+    <div class="img-lightbox-inner">
+      <button class="img-lightbox-close" id="imgLightboxClose">✕</button>
+      <img id="imgLightboxImg" src="" alt="Simbol GHS">
+    </div>
+  </div>
+
+  <script src="lab-assets.js"></script>
+  <script src="lab3d.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
