@@ -835,7 +835,6 @@ function renderGrid(filter) {
         <img src="${a.icon}" alt="${a.nama}" class="alat-icon-img">
       </div>
       <div class="alat-name">${a.nama}</div>
-      <div class="alat-cat">${catLabel(a.kat)}</div>
     </div>
   `).join("");
 }
